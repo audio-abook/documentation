@@ -15,8 +15,9 @@
                 <span>abook</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="delete-abook-account.html">Delete Account</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="delete-abook-account.html" data-i18n="nav.deleteAccount">Delete Account</a></li>
+                <li><button id="lang-toggle" class="lang-toggle">ME</button></li>
             </ul>
         </div>
     </nav>
@@ -24,8 +25,8 @@
   <!-- Content Section -->
   <section class="content-page">
   <div class="container">
-    <h1>Privacy Policy for abook</h1>
-<p><strong>Last updated:</strong> December 21, 2025</p>
+    <h1 data-i18n="privacy.title">Privacy Policy for abook</h1>
+<p><strong data-i18n="privacy.lastUpdated">Last updated:</strong> December 21, 2025</p>
 
 <p>
 This Privacy Policy explains how abook ("we", "us", "our") collects, uses, and protects
@@ -160,27 +161,28 @@ For questions or requests regarding privacy:
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>abook</h4>
-                    <p>Your personal audiobook companion</p>
+                    <p data-i18n="footer.tagline">Your personal audiobook companion</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
+                    <h4 data-i18n="footer.legal">Legal</h4>
                     <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="delete-abook-account.html">Delete Account</a></li>
+                        <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="delete-abook-account.html" data-i18n="footer.deleteAccount">Delete Account</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Support</h4>
+                    <h4 data-i18n="footer.support">Support</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer.help">Help Center</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 abook. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 abook. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    <script src="language.js"></script>
 </body>
 </html>

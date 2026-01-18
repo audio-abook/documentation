@@ -86,6 +86,24 @@ body {
     text-decoration: none;
 }
 
+.lang-toggle {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.lang-toggle:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
 /* Hero Section */var(--bg-dark)
 .hero {
     background: linear-gradient(135deg, var(--secondary-color) 0%, #003D6B 100%);

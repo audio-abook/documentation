@@ -15,9 +15,10 @@
                 <span>abook</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="#download" data-i18n="nav.download">Download</a></li>
+                <li><a href="privacy-policy.html" data-i18n="nav.privacy">Privacy</a></li>
+                <li><button id="lang-toggle" class="lang-toggle">ME</button></li>
             </ul>
         </div>
     </nav>
@@ -26,11 +27,11 @@
     <section class="hero">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1>Discover Stories That Speak to You</h1>
-                <p class="hero-subtitle">Immerse yourself in thousands of audiobooks, anytime, anywhere</p>
+                <h1 data-i18n="hero.title">Discover Stories That Speak to You</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Immerse yourself in thousands of audiobooks, anytime, anywhere</p>
                 <div class="cta-buttons">
-                    <a href="#download" class="btn btn-primary">Get Started Free</a>
-                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                    <a href="#download" class="btn btn-primary" data-i18n="hero.ctaPrimary">Get Started Free</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="hero.ctaSecondary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -42,22 +43,22 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2>Why Choose abook?</h2>
+            <h2 data-i18n="features.title">Why Choose abook?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📚</div>
-                    <h3>Vast Library</h3>
-                    <p>Access thousands of audiobooks across every genre imaginable</p>
+                    <h3 data-i18n="features.library.title">Vast Library</h3>
+                    <p data-i18n="features.library.description">Access thousands of audiobooks across every genre imaginable</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>Sync Across Devices</h3>
-                    <p>Pick up right where you left off on any device</p>
+                    <h3 data-i18n="features.sync.title">Sync Across Devices</h3>
+                    <p data-i18n="features.sync.description">Pick up right where you left off on any device</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌙</div>
-                    <h3>Sleep Timer</h3>
-                    <p>Fall asleep to your favorite stories with our built-in timer</p>
+                    <h3 data-i18n="features.sleep.title">Sleep Timer</h3>
+                    <p data-i18n="features.sleep.description">Fall asleep to your favorite stories with our built-in timer</p>
                 </div>
             </div>
         </div>
@@ -67,13 +68,13 @@
     <section class="app-preview">
         <div class="container">
             <div class="preview-content">
-                <h2>Your Library, Always With You</h2>
-                <p>Experience seamless listening with our beautifully designed app. Browse, download, and enjoy your favorite audiobooks with an interface built for book lovers.</p>
+                <h2 data-i18n="preview.title">Your Library, Always With You</h2>
+                <p data-i18n="preview.description">Experience seamless listening with our beautifully designed app. Browse, download, and enjoy your favorite audiobooks with an interface built for book lovers.</p>
                 <ul class="preview-list">
-                    <li>✓ Beautiful, intuitive interface</li>
-                    <li>✓ Smart bookmarking and notes</li>
-                    <li>✓ Customizable playback settings</li>
-                    <li>✓ CarPlay and Android Auto support</li>
+                    <li data-i18n="preview.feature1">✓ Beautiful, intuitive interface</li>
+                    <li data-i18n="preview.feature2">✓ Smart bookmarking and notes</li>
+                    <li data-i18n="preview.feature3">✓ Customizable playback settings</li>
+                    <li data-i18n="preview.feature4">✓ CarPlay and Android Auto support</li>
                 </ul>
             </div>
             <div class="preview-image">
@@ -85,8 +86,8 @@
     <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
-            <h2>Start Listening Today</h2>
-            <p class="download-subtitle">Available on iOS and Android</p>
+            <h2 data-i18n="download.title">Start Listening Today</h2>
+            <p class="download-subtitle" data-i18n="download.subtitle">Available on iOS and Android</p>
             <div class="download-buttons">
                 <a href="#" class="store-badge">
                     <img src="available-on-the-app-store.svg" alt="Download on the App Store">
@@ -104,27 +105,28 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>abook</h4>
-                    <p>Your personal audiobook companion</p>
+                    <p data-i18n="footer.tagline">Your personal audiobook companion</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
+                    <h4 data-i18n="footer.legal">Legal</h4>
                     <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="delete-abook-account.html">Delete Account</a></li>
+                        <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="delete-abook-account.html" data-i18n="footer.deleteAccount">Delete Account</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Support</h4>
+                    <h4 data-i18n="footer.support">Support</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer.help">Help Center</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 abook. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 abook. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    <script src="language.js"></script>
 </body>
 </html>

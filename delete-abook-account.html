@@ -15,8 +15,9 @@
                 <span>abook</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="privacy-policy.html" data-i18n="nav.privacy">Privacy</a></li>
+                <li><button id="lang-toggle" class="lang-toggle">ME</button></li>
             </ul>
         </div>
     </nav>
@@ -24,21 +25,21 @@
     <!-- Content Section -->
     <section class="content-page">
         <div class="container">
-            <h1>Delete abook Account</h1>
+            <h1 data-i18n="deleteAccount.title">Delete abook Account</h1>
             
             <div class="content-section">
-                <p>To request deletion of your abook account and associated data, please email <a href="mailto:info@ablest.me">info@ablest.me</a> from the email address used to create your account.</p>
+                <p><span data-i18n="deleteAccount.intro">To request deletion of your abook account and associated data, please email</span> <a href="mailto:info@ablest.me">info@ablest.me</a> <span data-i18n="deleteAccount.intro2">from the email address used to create your account.</span></p>
                 
-                <p>We will process your deletion request within 30 days.</p>
+                <p data-i18n="deleteAccount.process">We will process your deletion request within 30 days.</p>
                 
-                <h2>What happens when you delete your account?</h2>
+                <h2 data-i18n="deleteAccount.whatHappens">What happens when you delete your account?</h2>
                 <ul>
-                    <li>Your account will be permanently deleted</li>
-                    <li>All associated data will be removed from our systems</li>
-                    <li>This action cannot be undone</li>
+                    <li data-i18n="deleteAccount.bullet1">Your account will be permanently deleted</li>
+                    <li data-i18n="deleteAccount.bullet2">All associated data will be removed from our systems</li>
+                    <li data-i18n="deleteAccount.bullet3">This action cannot be undone</li>
                 </ul>
                 
-                <p><strong>Note:</strong> Please ensure you send the deletion request from the email address registered with your abook account to verify your identity.</p>
+                <p><strong data-i18n="deleteAccount.note">Note:</strong> <span data-i18n="deleteAccount.noteText">Please ensure you send the deletion request from the email address registered with your abook account to verify your identity.</span></p>
             </div>
         </div>
     </section>
@@ -49,27 +50,28 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>abook</h4>
-                    <p>Your personal audiobook companion</p>
+                    <p data-i18n="footer.tagline">Your personal audiobook companion</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
+                    <h4 data-i18n="footer.legal">Legal</h4>
                     <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="delete-abook-account.html">Delete Account</a></li>
+                        <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="delete-abook-account.html" data-i18n="footer.deleteAccount">Delete Account</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Support</h4>
+                    <h4 data-i18n="footer.support">Support</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer.help">Help Center</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 abook. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 abook. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    <script src="language.js"></script>
 </body>
 </html>
