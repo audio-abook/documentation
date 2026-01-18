@@ -104,15 +104,26 @@ body {
     transform: translateY(-1px);
 }
 
-/* Hero Section */var(--bg-dark)
+/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #003D6B 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-dark) 100%);
     color: white;
-    padding: 5rem 0 0;
+    padding: 4rem 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 
-.hero-container {
-    padding-bottom: 3rem;
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-content {
+    padding-right: 2rem;
+    padding-left: 3rem;
 }
 
 .hero-content h1 {
@@ -122,23 +133,24 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
     opacity: 0.95;
+    line-height: 1.6;
 }
 
 .cta-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 1rem 2.25rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     transition: all 0.3s ease;
     display: inline-block;
 }
@@ -165,14 +177,16 @@ body {
     color: var(--secondary-color);
 }
 
-.hero-image-full {
-    width: 100%;
-    overflow: hidden;
+.hero-image {
+    position: relative;
+    padding: 1.5rem 0;
 }
 
-.hero-image-full img {
-    width: 100%;
+.hero-image img {
+    max-width: 100%;
     height: auto;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
     display: block;
 }
 
@@ -411,31 +425,35 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         gap: 1rem;
-    }
-    
-    .app-preview .container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 0.9rem;
     }
     
     .hero {
-        padding: 3rem 0 0;
+        padding: 3rem 0;
+        min-height: auto;
     }
     
-    .hero-container {
-        padding-bottom: 2rem;
+    .hero-grid,
+    .app-preview .container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
     }
     
     .features-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
     }
     
     .btn {

@@ -380,7 +380,13 @@ function updateContent() {
 function updateToggleButton() {
     const toggleBtn = document.getElementById('lang-toggle');
     if (toggleBtn) {
-        toggleBtn.textContent = translations[currentLang].langToggle;
+        const span = toggleBtn.querySelector('span');
+        if (span) {
+            span.textContent = translations[currentLang].langToggle;
+        } else {
+            // Fallback if span doesn't exist
+            toggleBtn.textContent = '🌐 ' + translations[currentLang].langToggle;
+        }
     }
 }
 
